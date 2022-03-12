@@ -43,4 +43,31 @@ section.card{
 }
 
 
+.card footer{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
 
+.card footer img{
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+/* Wider version of Card  */
+@media screen and (min-width: 800px){
+    section.card{
+        max-width: 46.875rem;
+        display: flex;
+    }
+
+    .card picture{
+        flex: 0 1 26.667%;
+    }
+
+    .card > div{
+        flex: 0 1 73.33%;
+    }
+}
